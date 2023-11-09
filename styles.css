@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Oswald:wght@400;700&family=Source+Serif+4:opsz@8..60&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F2FEDC;
+    margin: 0 7%;
+}
+
+nav.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5% 0;
+}
+
+.nav-bar .logo{
+    width: 20%;
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+}
+
+.nav-bar .nav-items{
+    width: 70%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+a.nav-item{
+    text-decoration: none;
+    margin-left: 6%;
+    color: black;
+    font-size: 1.3rem;
+    font-family: 'Karla', sans-serif;
+}
+
+/* Intro Section */
+
+
+#intro{
+    min-height:fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 6%;
+}
+
+.social{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.social a{
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.intro-content{
+    width: 35%;
+    margin-left: 3%;
+}
+
+.intro-content h3{
+    font-size: 3.3rem;
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 2%;
+    font-weight: 700;
+}
+
+.intro-content h5{
+    font-size: 1.8rem;
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 2%;
+}
+
+.intro-content p{
+    font-size: 1.5rem;
+    font-family: 'Source Serif 4', serif;
+    margin-bottom: 2%;
+}
+
+.intro-content .intro-btn{
+    padding: 2% 3%;
+    border-radius: 5px;
+    background-color: black;
+    color: #F8F8FF;
+    font-size: 1.5rem;
+    margin-top: 8%;
+}
+
+.intro-img{
+    width: 364px;
+    height: 364px;
+    background-color: darkblue;
+    margin-left: 8%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-radius: 50% 50% 51% 49% / 29% 30% 70% 71%;
+    animation: rotate infinite linear 1000ms normal forwards;
+}
+
+.intro-img img{
+    margin-top: -30%;
+    margin-left: 5%;
+    width: 380px;
+    height: 380px;
+}
+
+@keyframes rotate {
+    0%   {border-radius: 50% 50% 51% 49% / 29% 30% 70% 71%;}
+    25%  {border-radius: 44% 56% 18% 82% / 52% 73% 27% 48%;}
+    50%  {border-radius: 70% 30% 69% 31% / 36% 36% 64% 64%;}
+    100% {border-radius: 50% 50% 51% 49% / 29% 30% 70% 71%;}
+}
