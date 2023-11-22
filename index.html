@@ -16,7 +16,7 @@
             </div>
             <div class="nav-items">
                 <a href="" class="nav-item">Home</a>
-                <a href="" class="nav-item">About</a>
+                <a href="#about" class="nav-item">About</a>
                 <a href="" class="nav-item">Skills</a>
                 <a href="" class="nav-item">Services</a>
                 <a href="" class="nav-item">Portfolio</a>
@@ -49,16 +49,134 @@
                 <img src="./about.jpg" alt="Me">
             </div>
             <div class="about-content">
-                <p>my biogrpahy</p>
+                <p>My biogrpahy</p>
                 <h2>Web enthusiast with profiencitnt knowledge in full stack development</h2>
-                <p>Welcome to my digital space! I am Sai Vaikant, a passionate and versatile web developer with a keen interest in app development and a solid foundation in data science. With a love for crafting innovative and user-centric digital experiences.</p>
-                <p>My journey in the world of coding has been fueled by a relentless curiosity and a drive to turn ideas into tangible, functional, and aesthetically pleasing realities.</p>
-                <button><a href="">Resume</a></button>
+                <p>Welcome to my digital space! I am Sai Vaikant, a passionate and versatile web developer with a keen
+                    interest in app development and a solid foundation in data science. With a love for crafting
+                    innovative and user-centric digital experiences.</p>
+                <p>My journey in the world of coding has been fueled by a relentless curiosity and a drive to turn ideas
+                    into tangible, functional, and aesthetically pleasing realities.</p>
+                <button><a href="">Resume ⤓</a></button>
             </div>
         </div>
     </section>
 
+    <section id="skills">
+        <h1>Services</h1>
+        <div class="skill-main">
+            <div class="myskill" onmouseover="change(this)" onmouseleave="defaultchange(this)">
+                <img src="./JavaScript-logo.png" alt="">
+                <h3>Javascript</h3>
+                <hr>
+                <p>Proficient in the latest features and syntax of ECMAScript, ensuring clean and efficient code.</p>
+            </div>
+            <div class="myskill" onmouseover="change(this)" onmouseleave="defaultchange(this)">
+                <img src="./mern.png" alt="">
+                <h3>MERN Stack</h3>
+                <hr>
+                <p>Extensive experience in building RESTful APIs and server-side applications with Express.js. Along with react</p>
+            </div>
+            <div class="myskill" onmouseover="change(this)" onmouseleave="defaultchange(this)">
+                <img src="./java.png" alt="">
+                <h3>Java</h3>
+                <hr>
+                <p>Strong foundation in Java's object-oriented programming principles, including encapsulation, inheritance, and polymorphism.</p>
+            </div>
+            <div class="myskill" onmouseover="change(this)" onmouseleave="defaultchange(this)">
+                <img src="./python.png" alt="">
+                <h3>Python</h3>
+                <hr>
+                <p>Strong command of Python's syntax and language features and I am still learning data science using python along with ml.</p>
+            </div>
+        </div>
+    </section>
+    <section id="profiency">
+        <h1>Profiency in languages</h1>
+        <div class="prof-skill">
+            <div class="prof-details">
+                <div class="hidden-1">
+                    <div class="hidden-item">
+                        <p>HTML</p>
+                        <div class="color">HTML</div>
+                    </div>
+                    <div class="hidden-item">
+                        <p>CSS</p>
+                        <div class="color">HTML</div>
+                    </div>
+                    <div class="hidden-item">
+                        <p>JS</p>
+                        <div class="color">HTML</div>
+                    </div>
+                    <div class="hidden-item">
+                        <p>React</p>
+                        <div class="color">HTML</div>
+                    </div>
+                    <div class="hidden-item">
+                        <p>Python</p>
+                        <div class="color">HTML</div>
+                    </div>
+                    <div class="hidden-item">
+                        <p>Java</p>
+                        <div class="color">HTML</div>
+                    </div>
+                </div>
+            </div>
+            <div class="prof-img">
+                <img src="./prof.jpg" alt="Proficiency">
+            </div>
+        </div>
+    </section>
+    <section id="categories">
+        <h1>Projects</h1>
+        <div class="categories">
+            <div class="cat">
+                <img src="first.png" alt="">
+                <hr style="margin: 0;">
+                <h2>My First<span> Website</span> using different html features</h2>
+                <div class="hidden">
+                    <button><a href="https://saivaikant.github.io/cv/" target="_blank">Visit Now</a></button>
+                </div>
+            </div>
+            <div class="cat">
+                <img src="waste_management.png" alt="">
+                <hr style="margin: 0;">
+                <h2>Waste Management website using html and css</h2>
+                <div class="hidden">
+                    <button><a href="https://saivaikant.github.io/Waste-Management-System-Website/" target="_blank">Visit Now</a></button>
+                </div>
+            </div>
+            <div class="cat">
+                <img src="keeper.png" alt="">
+                <h2>Note taking app using Basics of React</h2>
+                <div class="hidden">
+                    <button><a href="https://saivaikant.github.io/Kepper_App/" target="_blank">Visit Now</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 <script src="https://kit.fontawesome.com/9ca31af308.js" crossorigin="anonymous"></script>
+<script>
+    var web,frame,python,java,hidden;
+    web = document.getElementById('web');
 
+    web.addEventListener('mouseover',(e)=>{
+
+    })
+    function change(obj){
+        obj.style.backgroundColor = "#007561";
+        obj.children[1].style.color = "#fff";
+        obj.children[3].style.color = "#fff";
+        console.log(obj.children[2]);
+        obj.style.transform = "scale(1.1)";
+    }
+    function defaultchange(obj){
+        obj.style.backgroundColor = "#F2FEDC";
+        obj.children[1].style.color = "#007561";
+        obj.children[3].style.color = "black";
+        obj.style.transform = "scale(1)";
+    }
+</script>
 </html>
