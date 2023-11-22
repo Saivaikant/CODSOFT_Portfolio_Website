@@ -142,7 +142,7 @@ a.nav-item{
 }
 
 
-#about,#profiency{
+#about,#profiency,#resume{
     padding: 3% 10%;
     background-color:#007561;
     color:#FCEEE2;
@@ -276,78 +276,101 @@ button a:visited{
     height: 100vh;
 }
 
-.prof-skill{
+.main-skill{
     display: grid;
-    grid-template-columns: 55% 35%;
-    gap:2%;
-    justify-content: center;
-    align-items: center;
-    height:min-content;
-    margin-top: 9%;
-    /* border:1px solid; */
-}
-
-.prof-skill .prof-details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.prof-skill .prof-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.prof-skill .prof-img img{
-    width: 100%;
-    height: fit-content;
-}
-
-.color{
-    width: 80%;
-    position: relative;
-    background-color:#EEE8A9;
-    border-radius: 5px;
-    padding: 0.3%;
-}
-.color::after{
-    content: "";
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    background-color:black;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.hidden-1{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-}
-
-.hidden-1 .hidden-item{
-    display: flex;
+    grid-template-columns: 30% 30% 30%;
     justify-content: space-around;
-    margin-bottom: 8%;
+    align-items: center;
+    color: #007561;
+    margin: 10% 0;
 }
 
-.hidden-1 .hidden-item:nth-of-type(odd) .color::after{
+.main-skill .skill_list{
+    background-color: #F8F8FF;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #EEE8A9 0px 2px 8px 0px;
+}
+
+.skill_list ul{
+    list-style-type: none;
+    width: 100%;
+    margin: 4% 0;
+}
+
+ul .progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 8% 0;
+}
+
+.progress p{
+    width: 20%;
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+
+.progress .bar{
+    width: 90%;
+    height: 12px;
+    background-color: #007561;
+}
+
+.bar span{
+    float: left;
+    height: 12px;
+    background-color:#EEE8A9;
+}
+
+.html{
+    width: 60%;
+    animation: html 1s;
+}
+
+.css{
     width: 80%;
+    animation: css 1s;
 }
 
-.hidden-item p{
-    width: 10%;
-    font-size: 1.5rem;
-    font-family: 'Karla',sans-serif;
-    margin-right: 15%;
+.js{
+    width: 90%;
+    animation: js 1s;
 }
+
+@keyframes html {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+
+@keyframes css {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+
 
 /* Projects */
 
@@ -384,8 +407,8 @@ button a:visited{
     content: "";
     width: 0;
     height:300px;
-    background-color:#fff;
-    opacity: 40%;
+    background-color:#007561;
+    opacity: 30%;
     display: block;
     position: absolute;
     top:0;
@@ -407,6 +430,17 @@ button a:visited{
     margin: 2% 0;
     color:#000000;
     padding: 2.5%;
+}
+
+.cat p{
+    text-align: center;
+    font-size: 1rem;
+    font-family:'Poppins',sans-serif;
+    margin: 2% 0;
+    color:#000000;
+    padding: 2.5%;
+    display: none;
+    transition: display 0.3s ease-in;
 }
 
 .cat .hidden{
@@ -456,6 +490,42 @@ button a:visited{
         margin-top: 5%;
     }
 }
+
+/* Resume Section */
+
+#resume{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume h2{
+    font-size: 2rem;
+    font-family: 'SourceSerif',sans-serif;
+    margin: 3% 0;
+}
+
+#resume p{
+    font-size: 1.2rem;
+    font-family: 'Karla',sans-serif;
+    margin-bottom: 3%;
+}
+
+#resume button{
+    font-size: 1.2rem;
+    padding: 1% 2%;
+    border-radius: 10px;
+    border-color: #EEE8A9;
+    background-color: #EEE8A9;
+}
+
+#resume button a{
+    color: #007561;
+}
+
+
 
 
 
